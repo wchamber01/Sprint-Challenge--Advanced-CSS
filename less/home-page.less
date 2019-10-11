@@ -1,27 +1,28 @@
 // Home Content
 header{
-   @media @phone {
-      width: 500px;
-   }
-   img{
-      margin-top: 15%;
+   div{
+      width: 100%;
+      img{
+         width: 100%;
+         margin-top: 15%;
 
-      @media @phone {
-         margin: 0;
+         @media @phone {
+            margin: 0;
+         }
       }
-   }
 
-   h2{
-      padding: 15px;
-   }
+      h2{
+         padding: 15px;
+      }
 
-   p{
-      padding:0 15px;
+      p{
+         padding:0 15px;
+      }
    }
 }
 
 .space-images{
-   display: flex;
+   // display: flex;
    width: 100%;
 
    img{
@@ -82,16 +83,13 @@ header{
 
    .img{
       width: 48%;
-
-      @media @phone {
+      
+      @media @phone{
          width: 100%;
-         z-index: 0;
       }
 
       img{
-         @media @phone {
-            width: 100%;
-         }
+         width: 100%;
       }
    }
    

@@ -1,25 +1,28 @@
 // Navigation code here
 .nav {
+   .displayJA(center, center);
    background-color: rgba(246, 246, 246, 0.8);
    border-color: @nav-border;
-   padding-top: 2%;
-   position: fixed;
-   .displayJA(center, center);
+   padding-top: 2%; 
    flex-wrap: wrap;
-   width: 800px;
+   position: fixed;
+   z-index: 100;
+   top: 0;
+   left: float;
+   overflow: hidden;
+   width: 100%;
+   max-width: 800px;
+   height: auto;
    .border-rad;
 
    @media @phone{
       position: relative;
+      width: 100%;
    }
 
-   .title{
-      width: 100%;
-      
-      h1{
+   h1{
       text-align: center;
       font-size:4rem;
-      }
    }
 
    nav{

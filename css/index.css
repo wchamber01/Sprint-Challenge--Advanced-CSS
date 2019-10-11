@@ -167,26 +167,30 @@ img {
   border-radius: 10px;
 }
 .nav {
-  background-color: rgba(246, 246, 246, 0.8);
-  border-color: #F1F1F1;
-  padding-top: 2%;
-  position: fixed;
   display: flex;
   justify-content: center;
   align-content: center;
+  background-color: rgba(246, 246, 246, 0.8);
+  border-color: #F1F1F1;
+  padding-top: 2%;
   flex-wrap: wrap;
-  width: 800px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: float;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
   .nav {
     position: relative;
+    width: 100%;
   }
 }
-.nav .title {
-  width: 100%;
-}
-.nav .title h1 {
+.nav h1 {
   text-align: center;
   font-size: 4rem;
 }
@@ -205,36 +209,34 @@ img {
   font-size: 1.6rem;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #81848E;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-@media (max-width: 500px) {
-  header {
-    width: 500px;
-  }
+header div {
+  width: 100%;
 }
-header img {
+header div img {
+  width: 100%;
   margin-top: 15%;
 }
 @media (max-width: 500px) {
-  header img {
+  header div img {
     margin: 0;
   }
 }
-header h2 {
+header div h2 {
   padding: 15px;
 }
-header p {
+header div p {
   padding: 0 15px;
 }
 .space-images {
-  display: flex;
   width: 100%;
 }
 .space-images img {
@@ -297,13 +299,10 @@ header p {
 @media (max-width: 500px) {
   .walk .img {
     width: 100%;
-    z-index: 0;
   }
 }
-@media (max-width: 500px) {
-  .walk .img img {
-    width: 100%;
-  }
+.walk .img img {
+  width: 100%;
 }
 .walk .btn {
   width: 100%;
