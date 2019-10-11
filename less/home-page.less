@@ -1,75 +1,115 @@
 // Home Content
+header{
+   div{
+      width: 100%;
+      img{
+         width: 100%;
+         margin-top: 15%;
 
-.home {
+         @media @phone {
+            margin: 0;
+         }
+      }
 
-  .intro {
+      h2{
+         padding: 15px;
+      }
 
-    h2 {
-      padding: 15px;
-    }
+      p{
+         padding:0 15px;
+      }
+   }
+}
 
-    p {
-      padding:0 15px;
-    }
-  
-  }
+.space-images{
+   // display: flex;
+   width: 100%;
 
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
+   img{
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
 
-  .visit-planets {
-    padding: 15px;
+      @media @phone {
+         width: 100%;
+      }
+   }
 
-    h3 {
-      margin-top: 11px;
-    }
+   .launch, .sky{
+      @media @phone {
+         display:none;
+      }
+   }
 
-    p {
+}
+
+.visit-planets{
+   padding: 15px;
+   margin-bottom: 7%;
+
+   p{
       margin-top: 13px;
-    }
-  }
+   }
+}
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+.walk{
+   .displayJA(space-between, center);
+   width: 100%;
+   border-top: 1px solid @main-border-color;
+   padding: 5%;
+   flex-wrap: wrap;
 
-    .walk-text {
-      width: 50%;
+   @media @phone {
+      flex-direction: column-reverse;
+   }
 
-      h3 {
-        margin-bottom: 10px;
+   .text{
+      width: 48%;
+
+      @media @phone {
+         width: 100%;
+         z-index: 0;
+         margin-top: 2%;
       }
 
-      p {
-        margin-bottom: 26px;
+      h3{
+      margin-bottom: 10px;
       }
-
-      .btn {
+      p{
+      margin-top: 10px;
       }
-    }
+   }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
+   .img{
+      width: 48%;
       
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+      @media @phone{
+         width: 100%;
       }
-    }
-  }
-}// home
+
+      img{
+         width: 100%;
+      }
+   }
+   
+   .btn{
+      width: 100%;
+      margin: 2% 0;
+
+      @media @phone {
+         order: -1;
+      }
+      
+      button{
+         .custom-btn(@btn-bg-color, @btn-font-color);
+         padding:1% 0;
+         width: 15%;
+
+         @media @phone {
+         width: 100%;
+         padding:4% 0;
+         }
+      }
+   }
+}
