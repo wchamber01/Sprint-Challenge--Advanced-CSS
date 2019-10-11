@@ -4,3 +4,13 @@
     justify-content: @justify;
     align-content: @align;
 }
+
+.border-rad{
+    border-radius: 10px;
+}
+
+.custom-btn(@btn-bg-color, @btn-font-color){
+    background-color: @btn-bg-color;
+    color: @btn-font-color;
+    .border-rad;
+}
